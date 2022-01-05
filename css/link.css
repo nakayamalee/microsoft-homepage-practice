@@ -1,0 +1,19 @@
+.fb{
+    color: #425DAA;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.yt{
+    color: #ED2B2F;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+#link .container{
+    display: flex;
+    align-items: center;
+    color: rgb(145, 145, 145);
+    font-size: 15px;
+    margin-top: 48px;
+}

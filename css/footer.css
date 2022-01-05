@@ -1,0 +1,145 @@
+footer .container{
+    max-width: 100%;
+    background-color: #F2F2F2;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    margin-top: 48px;
+    background-color: #F2F2F2;
+    color: #616161;
+}
+
+.footer-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nav-card{
+    width: 15%;
+}
+
+.nav-card:nth-child(3n+1){
+    width: 16%;
+}
+
+
+.nav-title{
+    padding: 36px 0 4px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.nav-menu{
+    margin-top: -10px;
+    font-size: 12px;
+
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li{
+    padding: 8px 0;
+}
+
+.lang-group{
+    display: flex;
+    align-items: center;
+}
+
+.footer-lang{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.copyright ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.copyright li{
+    margin-top: -10px;
+    padding: 0 24px 0 0;
+}
+
+.lang-country{
+    flex-grow: 1;
+    transform: translateY(-15%);
+}
+
+
+.lang-pic i{
+    font-size: 24px;
+    /* transform: translateY(-10%); */
+    margin-right: 10px;  
+}
+
+footer a{
+    text-decoration: none;
+    color:#616161;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    /* text-decoration-thickness: 2px; */
+    /* text-underline-offset: 2px; */
+}
+@media screen and (max-width: 1083px) {
+    .nav-card:nth-child(3n+1){
+        width: 33%;
+    }
+    .nav-card{
+        width: 33%;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-lang{
+        flex-direction: column;
+        row-gap: 12px;
+    } 
+    .copyright li{
+        padding-right: 10px;
+    }
+    .nav-card:nth-child(3n+1){
+        width: 100%;
+    }
+    .nav-card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 539px) {
+    .footer-nav{
+        flex-flow: column nowrap;
+    }
+}
+@media screen and (max-width: 511px) {
+    .copyright li{
+        padding-right: 11px;
+        margin-top: 15px;
+    }
+    .copyright ul{
+        /* margin-top: 15px; */
+        margin: 0;
+    }
+    .lang-country{
+        transform: translateY(0%);
+    }
+    
+}

@@ -1,0 +1,64 @@
+#selling{
+    padding-top: 48px;
+    font-size: 15px;
+}
+
+#selling .row{
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+#selling .selling-group .col{
+    padding: 12px;
+}
+
+#selling .card-pic{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+#selling .card-info{
+    display: flex;
+    width: 125px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#selling a{
+    color: black;
+    text-decoration: none;
+}
+#selling .col:hover>.card-info{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+    #selling img{
+        width: 20px;
+        height: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    #selling .col{
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        width: 150px;
+    }
+    #selling .long-v{
+        width: 205px;
+    }
+    #selling .selling-group .col{
+        padding: 12px 0;
+    }
+    #selling .card-info{
+        width: 80%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10px;
+        /* padding: 0; */
+    }
+}
