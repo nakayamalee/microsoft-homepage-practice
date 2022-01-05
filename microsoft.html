@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="shortcut icon" href="./img/0.labal-logo/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -249,63 +250,72 @@
         </div>
     </header>
     <main>
-        <section id="carousel">
-            <div class="container">
-                <a href="#">
-                    <div class="carousel-container">
-                        <div class="carousel-pic"></div>
-                        <div class="carousel-content">
-                            <div class="title-group">
-                                <div class="carousel-content-title-info">
-                                    新上市
-                                </div>
-                                <div class="carousel-content-title">
-                                    Surface Go 3
-                                </div>
-                            </div>
-                            <div class="carousel-content-info">
-                                <p>最方便攜帶的Surface變形平板，最適合用來執行每日工作、家庭作業，以及玩樂。現在搭載Windows 11。</p>
-                            </div>
-                            <div class="carousel-content-buylink">
-                                <span class="buylink-text">立即選購</span><i class="fas fa-chevron-right"></i>
-                            </div>
-                        </div>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <section id="carousel">
+                                <a href="#">
+                                    <div class="carousel-container">
+                                        <div class="carousel-pic"></div>
+                                        <div class="carousel-content">
+                                            <div class="title-group">
+                                                <div class="carousel-content-title-info">
+                                                    新上市
+                                                </div>
+                                                <div class="carousel-content-title">
+                                                    Surface Go 3
+                                                </div>
+                                            </div>
+                                            <div class="carousel-content-info">
+                                                <p>最方便攜帶的Surface變形平板，最適合用來執行每日工作、家庭作業，以及玩樂。現在搭載Windows 11。</p>
+                                            </div>
+                                            <div class="carousel-content-buylink">
+                                                <span class="buylink-text">立即選購</span><i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </section>
                     </div>
-                </a>
-                <!-- <a href="">
-                    <div class="carousel-content">
-                        <div class="title-group">
-                            <div class="carousel-content-title-info">
-                                新上市
-                            </div>
-                            <div class="carousel-content-title">
-                                Surface Go 3
-                            </div>
-                        </div>
-                        <div class="carousel-content-info">
-                            最方便攜帶的Surface變形平板，最適合用來執行每日工作、家庭作業，以及玩樂。現在搭載Windows 11。
-                        </div>
-                        <div class="carousel-content-buylink">
-                            <span class="buylink-text">立即選購</span><i class="fas fa-chevron-right"></i>
-                        </div>
+                    <div class="swiper-slide">
+                        <section id="carousel2">
+                            <a href="#">
+                                <div class="carousel2-container">
+                                    <div class="carousel2-pic"></div>
+                                    <div class="carousel2-content">
+                                        <div class="title-group">
+                                            <!-- <div class="carousel2-content-title-info">
+                                                新上市
+                                            </div>
+                                            <div class="carousel2-content-title">
+                                                Surface Go 3
+                                            </div> -->
+                                        </div>
+                                        <div class="carousel2-content-info">
+                                            <!-- <p>最方便攜帶的Surface變形平板，最適合用來執行每日工作、家庭作業，以及玩樂。現在搭載Windows 11。</p> -->
+                                        </div>
+                                        <div class="carousel2-content-buylink">
+                                            <!-- <span class="buylink-text">立即選購</span><i class="fas fa-chevron-right"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </section>
                     </div>
-                    <div class="pointer">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
                 </div>
-                    <div class="carousel-menu">
-                </div>
-                    <picture>
-                        <source media="(min-width:1600px)" srcset="./img/2.carousel/1600x600.jpg">
-                        <source media="(min-width:1259px)" srcset="./img/2.carousel/1259x472.jpg">
-                        <source media="(min-width:1083px)" srcset="./img/2.carousel/1083x609.jpg">
-                        <source media="(min-width:767px)" srcset="./img/2.carousel/767x431.jpg">
-                        <source media="(min-width:539px)" srcset="./img/2.carousel/539x303.jpg">
-                        <img src="./img/2.carousel/1600x600.jpg" alt="">
-                    </picture>
-                </a> -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination maru"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
             </div>
-        </section>
+        </div>
+
         <section id="selling">
             <div class="container">
                 <div class="selling-group">
@@ -688,6 +698,25 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
