@@ -45,7 +45,21 @@ main .swiper-pagination-bullet-active{
     top: 80px;
     right: 5%;
 }
-
+.carousel2-content{
+    width: 570px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgba(0,0,0,0.5); */
+    color: black;
+    /* margin-right: 8%; */
+    /* margin-top: 80px; */
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100px;
+}
 .carousel-content-title-info{
     width: 66px;
     font-size: 14px;
@@ -59,8 +73,27 @@ main .swiper-pagination-bullet-active{
     font-size: 30px;
     font-weight: bold;
 }
+.carousel2-content-title{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.carousel2-content-info{
+    font-size: 20px;
+    color: white;
+}
 .carousel-content-buylink{
     width: 123px;
+    font-size: 14px;
+    background-color: black;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.carousel2-content-buylink{
+    width: 200px;
     font-size: 14px;
     background-color: black;
     color: #FFF;
